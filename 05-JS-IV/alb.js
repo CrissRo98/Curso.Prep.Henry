@@ -21,15 +21,11 @@
         Carrera: "Economía",
         Uni: "U del Pacífico",
         Distrito: "Jesús María",
-        Despierta: "5 a.m."
+        Despierta: "5 a.m.",
     }
 }
 ]
 
-var producto = {
-    aaaaa: 1111,
-    bbbbb: 2222,
-    ccccc: 3333,
-}
+
 
 
