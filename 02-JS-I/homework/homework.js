@@ -108,8 +108,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 0){return false;}
-  return true;
+  //if (num % 2 === 0){return false;}
+  //return true;
+  if (num % 2 !== 0){return true;}
+  else {return false;}
 }
 
 function elevarAlCuadrado(num) {
@@ -152,11 +154,11 @@ function numeroRandom() {
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
-  //Si el número es negativo, devolver ---> "Es negativo"
+  //Si el número es negativo, devolver --->s "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero === 0){return false};
-  if(numero > 0){return "Es positivo"};
-  if(numero < 0){return "Es negativo"};
+  if (numero === 0){return false};
+  if (numero > 0){return "Es positivo";}
+  if (numero < 0){return "Es negativo";}
 }
 
 function agregarSimboloExclamacion(str) {
@@ -206,7 +208,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro * 1.2;
+  const cambioDolar = euro * 1.2;
+  return cambioDolar;
 }
 
 
