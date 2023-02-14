@@ -43,7 +43,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma == "aleman"){
+  /*if (idioma == "aleman"){
     return "Guten Tag!";
   }
   else if(idioma == "mandarin"){
@@ -52,7 +52,24 @@ function saludo(idioma) {
   else if(idioma == "ingles"){
     return "Hello!";
   }
-  return "Hola!";
+  return "Hola!";*/
+  // switch (idioma){
+  //   case "aleman":
+  //     return "Guten Tag!";
+  //   case "mandarin":
+  //     return "Ni Hao!";
+  //   case "ingles":
+  //     return "Hello!";
+  //   default: return "Hola!"; 
+  // }
+  const lenguajes = {
+    aleman: "Guten Tag!",
+    mandarin: "Ni Hao!",
+    ingles: "Hello!"
+  }
+  const defaul = "Hola!"
+  const idiomas = lenguajes[idioma] || defaul;
+  return idiomas;
 }
 
 function colors(color) {
@@ -63,11 +80,20 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  if(color == "blue"){return "This is blue";}
+  /*if(color == "blue"){return "This is blue";}
   else if(color == "red"){return "This is red";}
   else if(color == "green"){return "This is green";}
   else if(color == "orange"){return "This is orange";}
-  return "Color not found";
+  return "Color not found";*/
+  const detector = {
+    blue: "This is blue",
+    red: "This is red",
+    green: "This is green",
+    orange: "This is orange"
+  }
+  const fault = "Color not found";
+  const operathor = detector[color] || fault;
+  return operathor;
 }
 
 function esDiezOCinco(numero) {
@@ -156,15 +182,17 @@ function tablaDelSeis(){
   /*var tablaseis = []  
   for(var i = 0; i <= 10; i++){tablaseis.push(6 * i)}
   return tablaseis*/
-  var array = []
-  for(var i = 0; i < 11; i++){array.push(6 * i)}
-  return array
+  var array = [];
+  for(var i = 0; i < 11; i++){array.push(6 * i);}
+  return array;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero > 99 && numero < 1000){return true;}
+  var stri = numero.toString();
+  if(stri.length === 3){return true;}
+  //if(numero > 99 && numero < 1000){return true;}
   return false;
 }
 
