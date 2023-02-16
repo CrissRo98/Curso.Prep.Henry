@@ -231,7 +231,12 @@ function continueStatement(numero) {
   // Tu código:
   var compostable = [];
   var RIteracion = numero;
-  for(var i = 0; i < 10; i++){if(i === 5){continue;}else {RIteracion = RIteracion + 2; compostable.push(RIteracion); }} return compostable;
+  for(var i = 0; i < 10; i++){
+    if(i === 5){
+      continue;}
+      else {
+        RIteracion = RIteracion + 2; compostable.push(RIteracion);}
+      } return compostable;
 }
 
 
